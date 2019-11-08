@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script language=javascript>
+    valorHora=parseFloat(prompt("Quantos vc ganha por hora?"))
+    horasMes=parseFloat(prompt("Quantas horas vc trabalha em um mes?"))
+    salario= valorHora*horasMes
+    imposto= salario*0.11
+    document.write("+ Salario Bruto  R$" +salario+ "</br>")
+    document.write("- Imposto de Renda (11%) :  R$" +imposto+"</br>")
+    inss= salario*0.08
+    document.write("- INSS (8%)  : R$ " + inss+"</br>")
+    sind= salario*0.05
+    document.write("- Sindicato (5%) :  R$" +sind+"</br>")
+    salarioLiquido= (salario-imposto-inss-sind)
+    document.write("= Salario Liquido  : R$"+salarioLiquido+"</br>")
+
+   
+    
+
+
+    </script>
+   
+</head>
+<body>
+    
+</body>
+</html>
